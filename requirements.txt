@@ -1,0 +1,23 @@
+# Reference Renamer - Core Dependencies
+# For development dependencies, see requirements-dev.txt
+
+# CLI and output
+click>=8.0.0
+rich>=10.0.0
+
+# Async HTTP
+aiohttp>=3.8.0
+backoff>=2.0.0
+
+# Document processing
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+Pillow>=9.0.0
+pytesseract>=0.3.10  # Requires system Tesseract installation
+
+# Citation management
+bibtexparser>=1.4.0
+python-dateutil>=2.8.0
+
+# Logging
+structlog>=21.0.0

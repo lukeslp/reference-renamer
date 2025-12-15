@@ -1,0 +1,51 @@
+# reference-renamer - Security-Patched Dependencies
+# Updated: November 20, 2025
+# All versions updated to address 63 known vulnerabilities
+
+# Critical Security Updates
+aiohttp>=3.12.14  # WAS: 3.9.1 - Fixes 6 vulnerabilities (request smuggling, XSS, DoS)
+gunicorn>=22.0.0  # WAS: 21.2.0 - Fixes 2 vulnerabilities (request smuggling)
+black>=24.3.0  # WAS: 23.11.0 - Fixes ReDoS vulnerability
+cryptography>=44.0.1  # WAS: 43.0.3 - Fixes OpenSSL vulnerability
+flask-cors>=6.0.0  # WAS: 4.0.0 - Fixes 4 vulnerabilities (log injection, path matching)
+
+# High Priority Updates
+langchain>=0.2.5  # WAS: 0.0.350 - Multiple vulnerabilities
+langchain-community>=0.3.27  # WAS: 0.0.20 - Fixes XXE and SSRF vulnerabilities
+eventlet>=0.40.3  # WAS: 0.35.2 - Fixes HTTP request smuggling
+brotli>=1.2.0  # WAS: 1.1.0 - Fixes DoS vulnerability
+
+# Core Dependencies (updated to secure versions)
+click>=8.1.0
+python-dotenv>=1.0.0
+rich>=13.0.0
+structlog>=24.0.0
+backoff>=2.2.0
+
+# Document Processing
+PyPDF2>=3.0.0
+pdf2image>=1.17.0
+Pillow>=11.0.0
+pytesseract>=0.3.13
+python-dateutil>=2.9.0
+bibtexparser>=1.4.1
+
+# Academic APIs
+arxiv>=2.1.0
+
+# Optional Development Dependencies
+pytest>=8.0.0
+pytest-cov>=6.0.0
+pytest-asyncio>=0.23.0
+mypy>=1.8.0
+isort>=5.13.0
+flake8>=7.0.0
+types-python-dateutil>=2.9.0
+
+# Notes:
+# - All critical and high severity vulnerabilities addressed
+# - Test suite must pass after these updates
+# - Breaking changes possible in langchain (0.0.x -> 0.2.x)
+# - aiohttp has breaking changes from 3.9 to 3.12
+# - Verify all functionality after updates
+
